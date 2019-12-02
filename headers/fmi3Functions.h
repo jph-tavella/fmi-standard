@@ -157,7 +157,7 @@ Common Functions
 #define fmi3DeSerializeFMUState      fmi3FullName(fmi3DeSerializeFMUState)
 
 /* Getting partial derivatives */
-#define fmi3GetDirectionalDerivative fmi3FullName(fmi3GetDirectionalDerivative)
+#define fmi3GetDirectionalDerivatives fmi3FullName(fmi3GetDirectionalDerivatives)
 
 /* Entering and exiting the Configuration or Reconfiguration Mode */
 #define fmi3EnterConfigurationMode   fmi3FullName(fmi3EnterConfigurationMode)
@@ -265,7 +265,7 @@ FMI3_Export fmi3SerializeFMUStateTYPE      fmi3SerializeFMUState;
 FMI3_Export fmi3DeSerializeFMUStateTYPE    fmi3DeSerializeFMUState;
 
 /* Getting partial derivatives */
-FMI3_Export fmi3GetDirectionalDerivativeTYPE fmi3GetDirectionalDerivative;
+FMI3_Export fmi3GetDirectionalDerivativesTYPE fmi3GetDirectionalDerivatives;
 
 /* Entering and exiting the Configuration or Reconfiguration Mode */
 FMI3_Export fmi3EnterConfigurationModeTYPE fmi3EnterConfigurationMode;
