@@ -379,8 +379,8 @@ typedef fmi3Status fmi3DeSerializeFMUStateTYPE   (fmi3Instance instance,
 /* end::SerializedFMUState[] */
 
 /* Getting partial derivatives */
-/* tag::GetDirectionalDerivative[] */
-typedef fmi3Status fmi3GetDirectionalDerivativeTYPE(fmi3Instance instance,
+/* tag::GetDirectionalDerivatives[] */
+typedef fmi3Status fmi3GetDirectionalDerivativesTYPE(fmi3Instance instance,
                                                     const fmi3ValueReference unknowns[],
                                                     size_t nUnknowns,
                                                     const fmi3ValueReference knowns[],
@@ -389,7 +389,7 @@ typedef fmi3Status fmi3GetDirectionalDerivativeTYPE(fmi3Instance instance,
                                                     size_t nDeltaKnowns,
                                                     fmi3Float64 deltaUnknowns[],
                                                     size_t nDeltaOfUnknowns);
-/* end::GetDirectionalDerivative[] */
+/* end::GetDirectionalDerivatives[] */
 
 /* Entering and exiting the Configuration or Reconfiguration Mode */
 /* tag::EnterConfigurationMode[] */
