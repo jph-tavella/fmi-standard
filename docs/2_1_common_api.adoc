@@ -893,11 +893,11 @@ include::../headers/fmi3FunctionTypes.h[tags=GetDirectionalDerivative]
 
 This function computes the directional derivatives of an FMU.
 
-- Argument `vrUnknown` contains the `valueReference`pass:[s] of the unknown variables. The number of `valueReference`pass:[s] is given by the argument `nUnknown`.
--	Argument `vrKnown` contains the `valueReference`pass:[s] of the known variables. The number of `valueReference`pass:[s] is given by the argument `nKnown`.
--	Arguments `dvKnown` and `dvUnknown` contain the serialized values of the referenced Variables (serializiation of values as defined in <<get-and-set-variable-values>>).
-- Argument `nDvKnown` provides the number of values in `dvKnown` which is only equal to `nKnown` if all `valueReference`pass:[s] of `vrKnown` point to variables.
-- Argument `nDvUnknown` provides the number of values in `dvUnknown` which is only equal to `nUnknown` if all `valueReference`pass:[s] of `vrUnknown` point to variables.
+- Argument `unknowns` contains the `valueReference`pass:[s] of the unknown variables. The number of `valueReference`pass:[s] is given by the argument `nUnknowns`.
+-	Argument `knowns` contains the `valueReference`pass:[s] of the known variables. The number of `valueReference`pass:[s] is given by the argument `nKnowns`.
+-	Arguments `deltaKnowns` and `deltaUnknowns` contain the serialized values of the referenced Variables (serialization of values as defined in <<get-and-set-variable-values>>).
+- Argument `nDeltaKnowns` provides the number of values in `deltaKnowns` which is only equal to `nKnowns` if all `valueReference`pass:[s] of `knowns` point to variables.
+- Argument `nDeltaUnknowns` provides the number of values in `deltaUnknowns` which is only equal to `nUnknowns` if all `valueReference`pass:[s] of `unknowns` point to variables.
 
 An FMU has different Modes and in every Mode an FMU might be described by different equations and different unknowns.
 The precise definitions are given in the mathematical descriptions of Model Exchange (<<math-model-exchange>>) and Co-Simulation (<<math-co-simulation>>).
