@@ -89,12 +89,13 @@ _[the support of basic co-simulation should be possible for most co-simulation F
 
 |====
 
-The flags have the following default values. +
-boolean: false +
+The flags have the following default values: +
+Boolean: false +
 unsignedInt: 0 +
 
 Note that if `needsExecutionTool = true`, then it is required that the original tool is available to be executed in co-simulation mode.
 If `needsExecutionTool = false`, the slave is completely contained inside the FMU in source code or binary format (DLL/SharedObject).
+Also note the combination of `canNotUseBasicCoSimulation = true`, `providesHybridCoSimulation = false`, and `providesScheduledExecutionSimulation = false` is not possible.
 
 ===== Example XML Description File [[xml-example-co-simulation]]
 
