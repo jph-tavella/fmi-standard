@@ -388,7 +388,7 @@ typedef fmi3Status fmi3GetDirectionalDerivativeTYPE(fmi3Instance instance,
                                                     const fmi3Float64 deltaKnowns[],
                                                     size_t nDeltaKnowns,
                                                     fmi3Float64 deltaUnknowns[],
-                                                    size_t nDeltaOfUnknowns);
+                                                    size_t nDeltaUnknowns);
 /* end::GetDirectionalDerivative[] */
 
 /* Entering and exiting the Configuration or Reconfiguration Mode */
